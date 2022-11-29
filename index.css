@@ -1,0 +1,241 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    position: absolute;
+    background-image: url(background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    overflow-x: hidden;
+}
+
+body{
+    position: relative;
+    height: 160vh;
+    width: 100vw;
+    background: rgba(4,2,1, 0.9);
+    margin-top: 7vh;
+}
+div.nav{
+    position: fixed;
+    height: 7vh;
+    width: 100vw;
+    background-color: rgb(30, 30, 30);
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: white;
+    font-family: 'Merriweather', serif;
+    z-index: 10;
+    top: 0;
+}
+div.nav h1{
+    margin-left: 1%;
+    font-size: 140%;
+}
+div.nav img{
+    margin-top: o;
+    margin-left: 0;
+    width: 5.7vw;
+}
+.nav button{
+    margin-left: auto;
+    margin-right: 5%;
+    padding: 0.6% 1.5%;
+    border-radius: 7.5px;
+    border: none;
+    background-color: rgb(13, 0, 14);
+}
+.nav button a{
+    text-decoration: none;
+    color: white;
+    font-family: 'Alexandria', sans-serif;
+}
+.nav button a:hover{
+    color: purple;
+    transition: 300ms;
+}
+
+
+
+
+section{
+    height: 150vh;
+    width: 76vw;
+    margin-left: 12vw;
+    background: rgba(4,2,1, 0.0);
+    background-position: bottom;
+    display: flex;
+}
+section#two{
+    position: absolute;
+    background: url(a.gif);
+    opacity: 0.2;
+    height: 170vh;
+    bottom: 0;
+}
+
+
+
+
+
+
+div.menu{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin-left: auto;
+    height: 70vh;
+    width: 15vw;
+    margin-top: 13vh;
+    background: rgba(4,2,1, 0.0);
+    align-items: center;
+    color: white;
+}
+div.menu a{
+    text-decoration: none;
+}
+div.men{
+    display: flex;
+    width: 14vw;
+    height: 10vh;
+    border-radius: 25px;
+    background-position: center;
+    background-size: cover;
+    transition: 0,5s;
+    text-align: center;
+    align-items: center;
+    font-size: 60%;
+    background: rgba(4,2,1, 0.0);
+}
+div.men img{
+    width: 3vw;
+    height: 8vh;
+    border-radius: 8px;
+    margin-left: 1.5vw;
+}
+div.men h1{
+    font-family: 'Merriweather', serif;
+    margin-left: 10%;
+    color: white;
+}
+  
+div.men a:hover{
+    color: blue;
+    transition: 300ms;
+}
+div.men:hover{
+    cursor: pointer;
+    background-color: rgb(92, 91, 91);
+    transition: 1000ms;
+  }
+
+
+
+
+
+
+div.ima{
+    position: relative;
+    display: flex;
+    width: 60vw;
+    height: 70vh;
+    margin-top: 13vh;
+    background-color: rgb(82, 80, 80);
+
+    background-image: url(test1.jpg);
+    background-size: cover;
+    background-position: center;
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+div.balk{
+    position: absolute;
+    width: 89vw;
+    height: 13vh;
+    background: rgba(#040201 0.0);
+    font-family: 'Alexandria', sans-serif;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    font-size: 200%;
+    color: white;
+    margin-left: 22%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+div.kaarten{
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50%;
+    padding-right: 16%;
+}
+div.kaart{
+    width: 15vw;
+    height: 40vh;
+    display: inline-block;
+    border-radius: 10px;
+    box-sizing: border-box;
+    cursor: pointer;
+    background-position: center;
+    background-size: cover;
+    transition:0.5s;
+    text-align: center;
+    font-size: 100%;
+    margin-left: 50px;
+}
+div.kaart1{
+    background-image: url(test5.jpg);
+  }
+  div.kaart2{
+    background-image: url(test4.png);
+  }
+  div.kaart3{
+    background-image: url(test3.jpg);
+  }
+  div.kaart4{
+    background-image: url(test2.jpg);
+}
+div.kaart a{
+    text-decoration: none;
+    font-family: 'Merriweather', serif;
+    color: black;
+  }
+  
+  div.kaart a:hover{
+    color: blue;
+    transition: 300ms;
+  }
+  
+  div.kaart:hover{
+    transform: translateY(-10px);
+    transition: 600ms;
+    box-shadow: 0px 12px 25px 0px blue;
+  }
+
