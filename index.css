@@ -4,7 +4,7 @@
 }
 html{
     position: absolute;
-    background-image: url(background.jpg);
+    background-image: url(docs/background.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -71,7 +71,7 @@ section{
 }
 section#two{
     position: absolute;
-    background: url(a.gif);
+    background: url(docs/a.gif);
     opacity: 0.2;
     height: 170vh;
     bottom: 0;
@@ -146,11 +146,35 @@ div.ima{
     margin-top: 13vh;
     background-color: rgb(82, 80, 80);
 
-    background-image: url(test1.jpg);
-    background-size: cover;
+    background-image: url(docs/test1.jpg);
+    background-size: 60vw 70vh;
     background-position: center;
     border-radius: 25px;
     cursor: pointer;
+    animation-name: backgrounds;
+    animation-duration: 60s;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-timing-function: cubic-bezier(1,-0.48,.7,1.22);
+}
+@keyframes backgrounds{
+     0% {background-image: url(docs/test1.jpg);}
+
+    20% {background-image: url(docs/gta.jpg);
+        background-size: 60vw 70.01vh;
+        }
+
+    40% {background-image: url(docs/apex.jpg);
+        background-size: 60vw 70.02vh;
+        }
+
+    60% {background-image: url(docs/cod.jpg);
+        background-size: 60vw 70.03vh;
+        }
+
+    80% {background-image: url(docs/fortnite.jpg);
+        background-size: 60vw 70.04vh;  
+        }
 }
 
 
@@ -211,16 +235,16 @@ div.kaart{
     margin-left: 50px;
 }
 div.kaart1{
-    background-image: url(test5.jpg);
+    background-image: url(docs/test5.jpg);
   }
   div.kaart2{
-    background-image: url(test4.png);
+    background-image: url(docs/test4.png);
   }
   div.kaart3{
-    background-image: url(test3.jpg);
+    background-image: url(docs/test3.jpg);
   }
   div.kaart4{
-    background-image: url(test2.jpg);
+    background-image: url(docs/test2.jpg);
 }
 div.kaart a{
     text-decoration: none;
