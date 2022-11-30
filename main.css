@@ -1,0 +1,285 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-size: 100%;
+    overflow-x: hidden;
+}
+::-webkit-scrollbar {
+    display: none;
+}
+html{
+    background-image: url(docs/background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+/*de balk*/
+
+nav{
+    position: fixed;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    min-height: 7vh;
+    max-height: 7vh;
+    width: 100vw;
+    background-color: rgb(30, 30, 30);
+    font-family: 'Merriweather', serif;
+    z-index: 100;
+}
+nav ul{
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+}
+nav li{
+    font-size: 150%;
+    padding: 0 3vw 0 4vw;
+}
+nav a{
+    color: white;
+    text-decoration: none;
+}
+nav a:hover{
+    color: rgb(225, 0, 225);
+    transition: 400ms ease-in-out;
+}
+nav img{
+    width: 5.7vw;
+    margin-right: auto
+}
+
+/*de flex box layout*/
+
+body{
+    position: relative;
+    display: flex;
+    width: 100vw;
+    height: 300vh;
+    background-image: url(docs/a.gif);
+}
+div.balk{
+    display: flex;
+    height: 300vh;
+    width: 12.5vw;
+    background: rgba(4,2,1, 9.95);
+}
+section{
+    height: 300vh;
+    width: 75vw;
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    background: rgba(4,2,1, 0.70);
+}
+/*de heeft er niks mee te maken*/
+div.pas{
+    height: 7vh;
+    width: 100%;
+    background-color: white;
+}
+
+
+div.s1{
+    height: 15vh;
+    width: 100%;
+    background: rgba(4,2,1, 0.0);
+    font-family: 'Merriweather', serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    font-size: 250%;
+}
+
+
+div.s2{
+    position: relative;
+    height: 70vh;
+    width: 100%;
+    background: rgba(4,2,1, 0.0);
+    font-family: 'Merriweather', serif;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+}
+
+
+
+
+div.img{
+    position: relative;
+    height: 100%;
+    width: 75%;
+    border-radius: 50px;
+    cursor: pointer;
+    background-image: url(docs/test1.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    animation-name: backgrounds;
+    animation-duration: 60s;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-timing-function: cubic-bezier(1,-0.48,.7,1.22);
+}
+
+@keyframes backgrounds{
+    0% {background-image: url(docs/test1.jpg);}
+
+   20% {background-image: url(docs/gta.jpg);}
+
+   40% {background-image: url(docs/apex.jpg);}
+
+   60% {background-image: url(docs/cod.jpg);}
+
+   80% {background-image: url(docs/fortnite.jpg);}
+}
+
+div.menu{
+    position: relative;
+    height: 100%;
+    width: 20%;
+    background: rgba(4,2,1, 0.0);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+div.card{
+    position: relative;
+    height: 20%;
+    width: 100%;
+    border-radius: 20px;
+    background: rgba(4,2,1, 0.0);
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: space-between;
+    color: white;
+    font-size: 120%;
+    cursor: pointer;
+}
+div.card:hover{
+    background: rgba(70, 70, 70, 0.5);
+    transition: 800ms ease-in-out;
+}
+div.card img{
+    height: 80%;
+    width: 25%;
+    border-radius: 10%;
+    margin-left: 10%;
+}
+div.card h1{
+    margin-right: 10%;
+}
+
+
+div.s3{
+    position: relative;
+    top: 0;
+    height: 10vh;
+    width: 100%;
+    background: rgba(4,2,1, 0.0);
+    font-family: 'Merriweather', serif;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    align-items: center;
+    color: white;
+    font-size: 300%;
+}
+/*ff apart*/
+div.s9{
+    position: relative;
+    top: 0;
+    height: 10vh;
+    width: 100%;
+    background: rgba(4,2,1, 0.0);
+    font-family: 'Merriweather', serif;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    align-items: center;
+    color: white;
+    font-size: 300%;
+}
+div.s9 h1#ff{
+    margin-right: 1%;
+}
+div.s9 h1#fg{
+    margin-right: 4%;
+}
+div.s9 h1#fh{
+    margin-right: 5%;
+}
+
+
+
+
+div.s4{
+    position: relative;
+    height: 80vh;
+    width: 100%;
+    background: rgba(4,2,1, 0.0);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+div.kaart{
+    position: relative;
+    height: 60%;
+    width: 22%;
+    border-radius: 10%;
+    background: rgba(4,2,1, 0.0);
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+div.kaart img{
+    height: 100%;
+    width: 100%;
+    border-radius: 10%;
+}
+div.kaart:hover{
+    transform: translateY(-10px);
+    transition: 600ms ease-in-out;
+    box-shadow: 0px 12px 25px 0px purple;
+}
+
+
+
+div.s6{
+    position: relative;
+    height: 50vh;
+    width: 100%;
+    background: rgba(4,2,1, 0.0);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+div.endcard{
+    position: relative;
+    height: 80%;
+    width: 40%;
+    background: rgba(4,2,1, 0.0);
+    display: flex;
+}
+div.endcard{
+    height: 90%;
+    width: 48%;
+    border-radius: 10%;
+    display: flex;
+}
+div.endcard:hover{
+    transform: translateY(-10px);
+    transition: 600ms ease-in-out;
+    box-shadow: 0px 12px 25px 0px purple;
+}
+div.endcard img{
+    width: 100%;
+    height: 100%;
+}
+

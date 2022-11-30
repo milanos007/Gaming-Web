@@ -1,0 +1,70 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    font-size: 50%;
+    display: flex;
+    align-items: center;
+}
+nav{
+    position: fixed;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    top: 0%;
+    color: white;
+    background-color: rgb(30, 30, 30);
+    font-family: 'Merriweather', serif;
+    width: 100vw;
+    height: 7vh;
+    z-index: 10;
+}
+nav img{
+    margin-top: o;
+    margin-left: 0;
+    width: 5.7vw;
+}
+div.txt{
+    display: flex;
+    justify-content: space-between;
+    padding: 0% 25%;
+}
+nav .txt h1{
+    font-size: 250%;
+    padding: 0% 20%;
+}
+.txt a{
+    text-decoration: none;
+    color: white;
+}
+nav .txt button{
+    top: 0;
+    right: 0;
+    font-size: 300%;
+    margin-left: 20%;
+    padding: 0.2% 1%;
+    background-color: gray;
+    font-family: 'Merriweather', serif;
+}
+body{
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin-top: 7vh;
+    height: 93vh;
+    width: 100vw;
+    background-color: wheat;
+    z-index: 0;
+}
+section{
+    position: relative;
+    display: flex;
+    align-items: center;
+    height: 93vh;
+    width: 80vw;
+    background-color: blue;
+    color: white;
+    margin-left: 10vw;
+    z-index: 9;
+}

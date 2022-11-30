@@ -13,10 +13,10 @@ html{
 
 body{
     position: relative;
+    display: flex;
     height: 160vh;
     width: 100vw;
     background: rgba(4,2,1, 0.9);
-    margin-top: 7vh;
 }
 div.nav{
     position: fixed;
@@ -40,7 +40,7 @@ div.nav img{
     margin-left: 0;
     width: 5.7vw;
 }
-.nav button{
+.nav button#Mhome{ 
     margin-left: auto;
     margin-right: 5%;
     padding: 0.6% 1.5%;
@@ -48,12 +48,12 @@ div.nav img{
     border: none;
     background-color: rgb(13, 0, 14);
 }
-.nav button a{
+.nav button#Mhome a{
     text-decoration: none;
     color: white;
     font-family: 'Alexandria', sans-serif;
 }
-.nav button a:hover{
+.nav button#Mhome a:hover{
     color: purple;
     transition: 300ms;
 }
@@ -71,6 +71,7 @@ section{
 }
 section#two{
     position: absolute;
+    display: flex;
     background: url(docs/a.gif);
     opacity: 0.2;
     height: 170vh;
@@ -224,21 +225,18 @@ div.kaarten{
     display: flex;
     justify-content: space-between;
     margin-top: 50%;
-    padding-right: 16%;
+    width: 76vw;
 }
 div.kaart{
-    width: 15vw;
-    height: 40vh;
-    display: inline-block;
-    border-radius: 10px;
-    box-sizing: border-box;
-    cursor: pointer;
-    background-position: center;
+    display: flex;
+    align-items: center;
+    max-width: 15vw;
+    min-width: 15vw;
+    min-height: 45vh;
+    max-height: 45vh;
+    border-radius: 20px;
     background-size: cover;
-    transition:0.5s;
-    text-align: center;
-    font-size: 100%;
-    margin-left: 50px;
+    background-position: center;
 }
 div.kaart1{
     background-image: url(docs/test5.jpg);
@@ -255,9 +253,10 @@ div.kaart4{
 div.kaart a{
     text-decoration: none;
     font-family: 'Merriweather', serif;
-    color: black;
+    color: white;
+    margin-left: 10%;
+    font-size: 140%;
 }
-  
 div.kaart a:hover{
     color: blue;
     transition: 300ms;
