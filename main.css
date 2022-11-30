@@ -72,7 +72,7 @@ section{
     display: flex;
     position: relative;
     flex-direction: column;
-    background: rgba(4,2,1, 0.70);
+    background: rgba(4,2,1, 0.9);
 }
 /*de heeft er niks mee te maken*/
 div.pas{
@@ -92,6 +92,9 @@ div.s1{
     align-items: center;
     color: white;
     font-size: 250%;
+}
+div.s1 p{
+    font-size: 55%;
 }
 
 
@@ -200,20 +203,11 @@ div.s9{
     background: rgba(4,2,1, 0.0);
     font-family: 'Merriweather', serif;
     display: flex;
-    justify-content: space-between;
     text-align: center;
     align-items: center;
+    justify-content: space-evenly;
     color: white;
     font-size: 300%;
-}
-div.s9 h1#ff{
-    margin-right: 1%;
-}
-div.s9 h1#fg{
-    margin-right: 4%;
-}
-div.s9 h1#fh{
-    margin-right: 5%;
 }
 
 
@@ -236,7 +230,13 @@ div.kaart{
     background: rgba(4,2,1, 0.0);
     display: flex;
     align-items: center;
+    flex-direction: column;
     cursor: pointer;
+    font-size: 200%;
+    color: white;
+}
+div.kaart h1{
+    position: absolute;
 }
 div.kaart img{
     height: 100%;
