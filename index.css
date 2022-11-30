@@ -187,16 +187,22 @@ div.ima{
 
 div.balk{
     position: absolute;
-    width: 89vw;
+    width:60vw;
     height: 13vh;
-    background: rgba(#040201 0.0);
+    background: rgba(4,2,1, 0.0);
     font-family: 'Alexandria', sans-serif;
     display: flex;
     align-items: center;
     text-align: center;
     font-size: 200%;
     color: white;
-    margin-left: 22%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+div.balk h1 p{
+    margin-right: 10%;
 }
 
 
@@ -236,30 +242,30 @@ div.kaart{
 }
 div.kaart1{
     background-image: url(docs/test5.jpg);
-  }
-  div.kaart2{
+}
+div.kaart2{
     background-image: url(docs/test4.png);
-  }
-  div.kaart3{
+}
+div.kaart3{
     background-image: url(docs/test3.jpg);
-  }
-  div.kaart4{
+}
+div.kaart4{
     background-image: url(docs/test2.jpg);
 }
 div.kaart a{
     text-decoration: none;
     font-family: 'Merriweather', serif;
     color: black;
-  }
+}
   
-  div.kaart a:hover{
+div.kaart a:hover{
     color: blue;
     transition: 300ms;
-  }
+}
   
-  div.kaart:hover{
+div.kaart:hover{
     transform: translateY(-10px);
     transition: 600ms;
     box-shadow: 0px 12px 25px 0px blue;
-  }
+}
 
