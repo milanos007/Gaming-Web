@@ -1,270 +1,290 @@
 *{
     margin: 0;
     padding: 0;
+    font-size: 100%;
+    overflow-x: hidden;
+}
+::-webkit-scrollbar {
+    display: none;
 }
 html{
-    position: absolute;
     background-image: url(docs/background.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    overflow-x: hidden;
+    font-family: 'Merriweather', serif;
 }
+
+a{
+    color: white;
+    text-decoration: none;
+}
+a:hover{
+    color: blue;
+    transition: 400ms ease-in-out;
+}
+a:active{
+    color: blueviolet;
+    transition: 300ms;
+}
+
+/*de balk*/
+nav{
+    position: fixed;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    min-height: 7vh;
+    max-height: 7vh;
+    width: 100vw;
+    background-color: rgb(30, 30, 30);
+    font-family: 'Merriweather', serif;
+    z-index: 100;
+}
+nav ul{
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+}
+nav li{
+    font-size: 150%;
+    padding: 0 3vw 0 4vw;
+}
+nav img{
+    width: 5.7vw;
+    margin-right: auto
+}
+
+/*de flex box layout*/
 
 body{
     position: relative;
     display: flex;
-    height: 160vh;
     width: 100vw;
+    height: 300vh;
+    background-image: url(docs/a.gif);
+}
+div.balk{
+    display: flex;
+    height: 300vh;
+    width: 12.5vw;
+    background: rgba(4,2,1, 9.95);
+}
+section{
+    height: 300vh;
+    width: 75vw;
+    display: flex;
+    position: relative;
+    flex-direction: column;
     background: rgba(4,2,1, 0.9);
 }
-div.nav{
-    position: fixed;
+/*de heeft er niks mee te maken*/
+div.pas{
     height: 7vh;
-    width: 100vw;
-    background-color: rgb(30, 30, 30);
-    display: flex;
-    align-items: center;
-    text-align: center;
-    color: white;
-    font-family: 'Merriweather', serif;
-    z-index: 10;
-    top: 0;
-}
-div.nav h1{
-    margin-left: 1%;
-    font-size: 140%;
-}
-div.nav img{
-    margin-top: o;
-    margin-left: 0;
-    width: 5.7vw;
-}
-.nav button#Mhome{ 
-    margin-left: auto;
-    margin-right: 5%;
-    padding: 0.6% 1.5%;
-    border-radius: 7.5px;
-    border: none;
-    background-color: rgb(13, 0, 14);
-}
-.nav button#Mhome a{
-    text-decoration: none;
-    color: white;
-    font-family: 'Alexandria', sans-serif;
-}
-.nav button#Mhome a:hover{
-    color: purple;
-    transition: 300ms;
+    width: 100%;
+    background-color: white;
 }
 
 
-
-
-section{
-    height: 150vh;
-    width: 76vw;
-    margin-left: 12vw;
+div.s1{
+    height: 15vh;
+    width: 100%;
     background: rgba(4,2,1, 0.0);
-    background-position: bottom;
-    display: flex;
-}
-section#two{
-    position: absolute;
-    display: flex;
-    background: url(docs/a.gif);
-    opacity: 0.2;
-    height: 170vh;
-    bottom: 0;
-}
-
-
-
-
-
-
-div.menu{
-    position: relative;
+    font-family: 'Merriweather', serif;
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
-    margin-left: auto;
-    height: 70vh;
-    width: 15vw;
-    margin-top: 13vh;
-    background: rgba(4,2,1, 0.0);
     align-items: center;
     color: white;
+    font-size: 250%;
 }
-div.menu a{
-    text-decoration: none;
+div.s1 p{
+    font-size: 55%;
 }
-div.men{
-    display: flex;
-    width: 14vw;
-    height: 10vh;
-    border-radius: 25px;
-    background-position: center;
-    background-size: cover;
-    transition: 0,5s;
-    text-align: center;
-    align-items: center;
-    font-size: 60%;
-    background: rgba(4,2,1, 0.0);
-}
-div.men img{
-    width: 3vw;
-    height: 8vh;
-    border-radius: 8px;
-    margin-left: 1.5vw;
-}
-div.men h1{
-    font-family: 'Merriweather', serif;
-    margin-left: 10%;
-    color: white;
-}
-  
-div.men a:hover{
-    color: blue;
-    transition: 300ms;
-}
-div.men:hover{
-    cursor: pointer;
-    background-color: rgb(92, 91, 91);
-    transition: 1000ms;
-  }
 
 
-
-
-
-
-div.ima{
+div.s2{
     position: relative;
-    display: flex;
-    width: 60vw;
     height: 70vh;
-    margin-top: 13vh;
-    background-color: rgb(82, 80, 80);
+    width: 100%;
+    background: rgba(4,2,1, 0.0);
+    font-family: 'Merriweather', serif;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+}
 
-    background-image: url(docs/test1.jpg);
-    background-size: 60vw 70vh;
-    background-position: center;
-    border-radius: 25px;
+
+
+
+div.img{
+    position: relative;
+    height: 100%;
+    width: 75%;
+    border-radius: 50px;
     cursor: pointer;
+    background-image: url(docs/test1.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     animation-name: backgrounds;
     animation-duration: 60s;
     animation-delay: 0s;
     animation-iteration-count: infinite;
     animation-timing-function: cubic-bezier(1,-0.48,.7,1.22);
 }
+
 @keyframes backgrounds{
-     0% {background-image: url(docs/test1.jpg);}
+    0% {background-image: url(docs/test1.jpg);}
 
-    20% {background-image: url(docs/gta.jpg);
-        background-size: 60vw 70.01vh;
-        }
+   20% {background-image: url(docs/gta.jpg);}
 
-    40% {background-image: url(docs/apex.jpg);
-        background-size: 60vw 70.02vh;
-        }
+   40% {background-image: url(docs/apex.jpg);}
 
-    60% {background-image: url(docs/cod.jpg);
-        background-size: 60vw 70.03vh;
-        }
+   60% {background-image: url(docs/cod.jpg);}
 
-    80% {background-image: url(docs/fortnite.jpg);
-        background-size: 60vw 70.04vh;  
-        }
+   80% {background-image: url(docs/fortnite.jpg);}
 }
 
-
-
-
-
-
-
-
-
-div.balk{
-    position: absolute;
-    width:60vw;
-    height: 13vh;
+div.menu{
+    position: relative;
+    height: 100%;
+    width: 20%;
     background: rgba(4,2,1, 0.0);
-    font-family: 'Alexandria', sans-serif;
     display: flex;
-    align-items: center;
-    text-align: center;
-    font-size: 200%;
-    color: white;
-    display: flex;
-    align-items: center;
     flex-direction: column;
-    text-align: center;
+    justify-content: space-between;
 }
-div.balk h1 p{
+
+div.card{
+    position: relative;
+    height: 20%;
+    width: 100%;
+    border-radius: 20px;
+    background: rgba(4,2,1, 0.0);
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: space-between;
+    color: white;
+    font-size: 120%;
+    cursor: pointer;
+}
+div.card:hover{
+    background: rgba(70, 70, 70, 0.5);
+    transition: 800ms ease-in-out;
+}
+div.card img{
+    height: 80%;
+    width: 25%;
+    border-radius: 10%;
+    margin-left: 10%;
+}
+div.card a{
     margin-right: 10%;
 }
 
 
+div.s3{
+    position: relative;
+    top: 0;
+    height: 10vh;
+    width: 100%;
+    background: rgba(4,2,1, 0.0);
+    font-family: 'Merriweather', serif;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    align-items: center;
+    color: white;
+    font-size: 300%;
+}
+/*ff apart*/
+div.s9{
+    position: relative;
+    top: 0;
+    height: 10vh;
+    width: 100%;
+    background: rgba(4,2,1, 0.0);
+    font-family: 'Merriweather', serif;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: space-evenly;
+    color: white;
+    font-size: 300%;
+}
 
 
 
 
-
-
-
-
-
-
-
-
-
-div.kaarten{
-    position: absolute;
+div.s4{
+    position: relative;
+    height: 80vh;
+    width: 100%;
+    background: rgba(4,2,1, 0.0);
     display: flex;
     justify-content: space-between;
-    margin-top: 50%;
-    width: 76vw;
+    align-items: center;
 }
 div.kaart{
+    position: relative;
+    height: 60%;
+    width: 22%;
+    border-radius: 10%;
+    background: rgba(4,2,1, 0.0);
     display: flex;
     align-items: center;
-    max-width: 15vw;
-    min-width: 15vw;
-    min-height: 45vh;
-    max-height: 45vh;
-    border-radius: 20px;
-    background-size: cover;
-    background-position: center;
-}
-div.kaart1{
-    background-image: url(docs/test5.jpg);
-}
-div.kaart2{
-    background-image: url(docs/test4.png);
-}
-div.kaart3{
-    background-image: url(docs/test3.jpg);
-}
-div.kaart4{
-    background-image: url(docs/test2.jpg);
+    flex-direction: column;
+    cursor: pointer;
+    font-size: 200%;
+    color: white;
 }
 div.kaart a{
-    text-decoration: none;
-    font-family: 'Merriweather', serif;
-    color: white;
-    margin-left: 10%;
-    font-size: 140%;
+    position: absolute;
 }
-div.kaart a:hover{
-    color: blue;
-    transition: 300ms;
+div.kaart img{
+    height: 100%;
+    width: 100%;
+    border-radius: 10%;
 }
-  
 div.kaart:hover{
     transform: translateY(-10px);
-    transition: 600ms;
-    box-shadow: 0px 12px 25px 0px blue;
+    transition: 600ms ease-in-out;
+    box-shadow: 0px 12px 25px 0px purple;
+}
+
+
+
+div.s6{
+    position: relative;
+    height: 50vh;
+    width: 100%;
+    background: rgba(4,2,1, 0.0);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+div.endcard{
+    position: relative;
+    height: 80%;
+    width: 40%;
+    background: rgba(4,2,1, 0.0);
+    display: flex;
+}
+div.endcard{
+    height: 90%;
+    width: 48%;
+    border-radius: 10%;
+    display: flex;
+}
+div.endcard:hover{
+    transform: translateY(-10px);
+    transition: 600ms ease-in-out;
+    box-shadow: 0px 12px 25px 0px purple;
+}
+div.endcard img{
+    width: 100%;
+    height: 100%;
 }
 
