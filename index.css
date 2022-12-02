@@ -15,6 +15,12 @@ html{
     font-family: 'Merriweather', serif;
 }
 
+/*De eerste sectie L100*/
+/*Titel en onder L200*/
+/*De kaartenL250*/
+/*De endcards L300*/
+/* <300 media en devices*/
+
 a{
     color: white;
     text-decoration: none;
@@ -87,6 +93,17 @@ div.pas{
 }
 
 
+
+
+
+
+
+
+
+
+
+
+/* de titel*/
 div.s1{
     height: 15vh;
     width: 100%;
@@ -102,7 +119,7 @@ div.s1 p{
     font-size: 55%;
 }
 
-
+/*de main page interface*/
 div.s2{
     position: relative;
     height: 70vh;
@@ -185,21 +202,9 @@ div.card a{
 }
 
 
-div.s3{
-    position: relative;
-    top: 0;
-    height: 10vh;
-    width: 100%;
-    background: rgba(4,2,1, 0.0);
-    font-family: 'Merriweather', serif;
-    display: flex;
-    justify-content: space-around;
-    text-align: center;
-    align-items: center;
-    color: white;
-    font-size: 300%;
-}
-/*ff apart*/
+
+
+/* de titels V = hier onze cv's etc*/
 div.s9{
     position: relative;
     top: 0;
@@ -211,13 +216,29 @@ div.s9{
     text-align: center;
     align-items: center;
     justify-content: space-evenly;
-    color: white;
+    color: rgb(255, 255, 255);
+    font-size: 300%;
+}
+div.s3{
+    position: relative;
+    top: 0;
+    height: 10vh;
+    width: 100%;
+    background: rgba(4,2,1, 0.0);
+    font-family: 'Merriweather', serif;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    align-items: center;
+    color: rgb(255, 255, 255);
     font-size: 300%;
 }
 
 
 
 
+
+/* de kaarten*/
 div.s4{
     position: relative;
     height: 80vh;
@@ -256,6 +277,15 @@ div.kaart:hover{
 
 
 
+
+
+
+
+
+
+
+/*end cards*/
+
 div.s6{
     position: relative;
     height: 50vh;
@@ -288,3 +318,44 @@ div.endcard img{
     height: 100%;
 }
 
+
+/*Devices*/
+
+@media screen and (max-width: 1100px) {
+    div.s1 h1{
+        margin-top: 3%;
+    }
+    div.s2{
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    div.menu{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
+
+    }
+    div.card{
+        width: 40%;
+    }
+    div.kaart{
+        height: 30%;
+        font-size: 130%;
+    }
+    div.s6{
+        height: 30vh;
+    }
+}
+@media screen and (max-width: 500px) {
+    html{
+        font-size: 75%;
+        size: 75%;
+    }
+    div.kaart{
+        height: 25%;
+        font-size: 90%;
+    }
+}
