@@ -12,6 +12,20 @@ html{
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    font-family: 'Merriweather', serif;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+a:hover{
+    color: blue;
+    transition: 600ms;
+}
+a:active{
+    color: purple;
+    transition: 100ms;
 }
 
 /*de balk*/
@@ -37,14 +51,6 @@ nav ul{
 nav li{
     font-size: 150%;
     padding: 0 3vw 0 4vw;
-}
-nav a{
-    color: white;
-    text-decoration: none;
-}
-nav a:hover{
-    color: rgb(225, 0, 225);
-    transition: 400ms ease-in-out;
 }
 nav img{
     width: 5.7vw;
@@ -239,7 +245,7 @@ div.kaart h1{
     position: absolute;
 }
 div.kaart img{
-    height: 100%;
+    height: max-content;
     width: 100%;
     border-radius: 10%;
 }
