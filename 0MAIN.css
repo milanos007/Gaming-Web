@@ -1,79 +1,93 @@
 *{
     margin: 0;
     padding: 0;
+    font-size: 100%;
+    overflow-x: hidden;
+}
+::-webkit-scrollbar {
+    display: none;
 }
 html{
-    font-size: 50%;
-    display: flex;
-    align-items: center;
+    background-image: url(docs/background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    font-family: 'Merriweather', serif;
 }
+
+/*De eerste sectie L100*/
+/*Titel en onder L200*/
+/*De kaartenL250*/
+/*De endcards L300*/
+/* <300 media en devices*/
+
+a{
+    color: white;
+    text-decoration: none;
+}
+a:hover{
+    color: blue;
+    transition: 400ms ease-in-out;
+}
+a:active{
+    color: blueviolet;
+    transition: 300ms;
+}
+
+/*de balk*/
 nav{
     position: fixed;
     display: flex;
     align-items: center;
-    text-align: center;
-    top: 0%;
-    color: white;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    min-height: 7vh;
+    max-height: 7vh;
+    width: 100vw;
     background-color: rgb(30, 30, 30);
     font-family: 'Merriweather', serif;
-    width: 100vw;
-    height: 7vh;
-    z-index: 10;
+    z-index: 100;
+}
+nav ul{
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+}
+nav li{
+    font-size: 150%;
+    padding: 0 3vw 0 4vw;
 }
 nav img{
-    margin-top: o;
-    margin-left: 0;
     width: 5.7vw;
+    margin-right: auto
 }
-div.txt{
-    display: flex;
-    justify-content: space-between;
-    padding: 0% 25%;
-}
-nav .txt h1{
-    font-size: 250%;
-    padding: 0% 20%;
-}
-a{
-    text-decoration: none;
-    color: white;
-}
-a:hover{
-    color: blue;
-    transition: 600ms;
-}
-a:active{
-    color: purple;
-    transition: 100ms;
-}
-nav .txt button{
-    top: 0;
-    right: 0;
-    font-size: 300%;
-    margin-left: 20%;
-    padding: 0.2% 1%;
-    background-color: black;
-    font-family: 'Merriweather', serif;
-    border-radius: 10%;
-}
+
+/*de flex box layout*/
+
 body{
     position: relative;
     display: flex;
-    align-items: center;
-    margin-top: 7vh;
-    height: 93vh;
     width: 100vw;
-    background-color: black;
-    z-index: 0;
+    height: 300vh;
+    background-color: white;
+}
+div.balk{
+    display: flex;
+    height: 300vh;
+    width: 12.5vw;
+    background: rgba(4,2,1, 9.95);
+}
+/*de heeft er niks mee te maken*/
+div.pas{
+    height: 7vh;
+    width: 100%;
+    background-color: white;
 }
 section{
-    position: relative;
+    height: 300vh;
+    width: 75vw;
     display: flex;
-    align-items: center;
-    height: 93vh;
-    width: 80vw;
-    background-color: blue;
-    color: white;
-    margin-left: 10vw;
-    z-index: 9;
+    position: relative;
+    flex-direction: column;
+    background: rgba(4,2,1, 0.9);
 }

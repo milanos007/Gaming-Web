@@ -139,7 +139,6 @@ div.img{
     height: 100%;
     width: 75%;
     border-radius: 50px;
-    cursor: pointer;
     background-image: url(docs/test1.jpg);
     background-position: center;
     background-repeat: no-repeat;
@@ -147,6 +146,7 @@ div.img{
     animation-name: backgrounds;
     animation-duration: 60s;
     animation-delay: 0s;
+    cursor: pointer;
     animation-iteration-count: infinite;
     animation-timing-function: cubic-bezier(1,-0.48,.7,1.22);
 }
@@ -185,7 +185,6 @@ div.card{
     justify-content: space-between;
     color: white;
     font-size: 120%;
-    cursor: pointer;
 }
 div.card:hover{
     background: rgba(70, 70, 70, 0.5);
@@ -257,7 +256,6 @@ div.kaart{
     display: flex;
     align-items: center;
     flex-direction: column;
-    cursor: pointer;
     font-size: 200%;
     color: white;
 }

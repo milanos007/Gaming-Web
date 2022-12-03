@@ -7,24 +7,54 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Amerencio</title>
-    <link rel="stylesheet" href="0MAIN.css">
+    <title>Gaming website</title>
+    <link href="0MAIN.css" rel="stylesheet">
+    <link href="ame.css" rel="stylesheet">
 </head>
 
 <nav>
-    <img src="docs/logo.jpg" alt="logo">
-    <div class="txt">
-        <h1><a href="#">Amerencio</a></h1>
-        <h1><a href="#">Victor</a></h1>
-        <h1><a href="#">Milan</a></h1>
-        <h1><a href="#">Oscar</a></h1>
-        <button><a href="#">Home</a></button>
-    </div>
+    <a href="#"><img src="docs/logo.jpg" alt="logo"></a>
+    <ul>
+        <li><a href="#">Amerencio</a></li>
+        <li><a href="#">Oscar</a></li>
+        <li><a href="#">Victor</a></li>
+        <li><a href="#">Milan</a></li>
+    </ul>
 </nav>
 
 <body>
+    <div class="balk balk1"></div>
     <section>
-        <h1>hello</h1>
+        <div class="pas"></div>
+
+
+        <div id="gameFrame">
+            <div id="healthBar"></div>
+            <div class="enemy" id="enemy1" onclick="iShoot(this)"></div>
+            <div class="enemy" id="enemy2" onclick="iShoot(this)"></div>
+            <div class="enemy" id="enemy3" onclick="iShoot(this)"></div>
+            <div class="enemy" id="enemy4" onclick="iShoot(this)"></div>
+            <div class="enemy" id="enemy5" onclick="iShoot(this)"></div>
+            <div class="enemy" id="enemy6" onclick="iShoot(this)"></div>
+            <div class="enemy" id="enemy7" onclick="iShoot(this)"></div>
+            <div class="enemy" id="enemy8" onclick="iShoot(this)"></div>
+            <div class="enemy" id="enemy9" onclick="iShoot(this)"></div>
+            <div class="enemy" id="enemy10" onclick="iShoot(this)"></div>
+            <div class="enemy" id="enemy11" onclick="iShoot(this)"></div>
+            <div class="enemy" id="enemy12" onclick="iShoot(this)"></div>
+            <div class="enemy" id="enemy13" onclick="iShoot(this)"></div>
+            <div class="enemy" id="enemy14" onclick="iShoot(this)"></div>
+            <div class="enemy" id="enemy15" onclick="iShoot(this)"></div>
+            <div class="enemy" id="enemy16" onclick="iShoot(this)"></div>
+            <div class="enemy" id="enemy17" onclick="iShoot(this)"></div>
+            <div class="enemy" id="enemy18" onclick="iShoot(this)"></div>
+            <div class="enemy" id="enemy19" onclick="iShoot(this)"></div>
+            <div class="enemy" id="enemy20" onclick="iShoot(this)"></div>
+            <button onclick="newGame()"> Start </button>
+        </div>
+
+        <script src="ame.js"></script>
     </section>
+    <div class="balk balk2"></div>
 </body>
 </html>

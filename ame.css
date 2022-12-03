@@ -1,0 +1,82 @@
+
+div#gameFrame{
+    position: relative;
+    width: 80%;
+    height: 25%;
+    margin-left: 10%;
+    margin-top: 5%;
+    background-color: black;
+    cursor: crosshair;
+    display: flex;
+    justify-content: space-around;
+
+    overflow: hidden;
+}
+.enemy{
+    width: 4%;
+    height: 10%;
+    position: relative;
+    background-color: white;
+    bottom: -120%;
+    transition: all 600ms;
+}
+
+.enemy.showing{
+    bottom: -50%;
+}
+
+.enemy.shooting{
+    background-color: red;
+}
+
+#enemy1.showing{    bottom: -50%;}
+#enemy2.showing{    bottom: -20%;}
+#enemy3.showing{    bottom: -80%;}
+#enemy4.showing{    bottom: -50%;}
+#enemy5.showing{    bottom: -10%;}
+#enemy6.showing{    bottom: -20%;}
+#enemy7.showing{    bottom: -70%;}
+#enemy8.showing{    bottom: -50%;}
+#enemy9.showing{    bottom: -90%;}
+#enemy10.showing{    bottom: -30%;}
+#enemy11.showing{    bottom: -80%;}
+#enemy12.showing{    bottom: -50%;}
+#enemy13.showing{    bottom: -90%;}
+#enemy14.showing{    bottom: -10%;}
+#enemy15.showing{    bottom: -40%;}
+#enemy16.showing{    bottom: -60%;}
+#enemy17.showing{    bottom: -40%;}
+#enemy18.showing{    bottom: -70%;}
+#enemy19.showing{    bottom: -30%;}
+#enemy20.showing{    bottom: -50%;}
+
+.enemy.dead{
+    background-color: red;
+    height: 10%;
+    transition: 10ms;
+}
+
+#healthBar{
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    height: 5%;
+    width: 100%;
+    background-color: blueviolet;
+    transition: width 20ms;
+    z-index: 1;
+}
+
+button{
+    position: absolute;
+    height: 20%;
+    width: 40%;
+    background-color: white;
+    border: 0;
+    border-radius: 20px;
+    box-shadow: none;
+    font-size: 500%;
+    font-family: 'Merriweather', serif;
+    z-index: 20;
+    margin-top: 20%;
+}
