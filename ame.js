@@ -5,7 +5,7 @@ var nice = document.getElementById("nice");
 
 function iShoot(enemy) {
     enemy.classList.add("dead");
-    updateHealthPoints(healthPoints + 3);
+    updateHealthPoints(healthPoints + 5);
 
     if(!livingEnemies().length) {
         document.getElementById("win").style.visibility='visible';
