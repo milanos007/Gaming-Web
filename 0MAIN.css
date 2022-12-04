@@ -58,8 +58,8 @@ nav li{
     padding: 0 3vw 0 4vw;
 }
 nav img{
-    width: 5.7vw;
-    margin-right: auto
+    width: 70%;
+    height: 7vh;
 }
 
 /*de flex box layout*/

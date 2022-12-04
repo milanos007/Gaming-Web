@@ -58,8 +58,9 @@ nav li{
     padding: 0 3vw 0 4vw;
 }
 nav img{
-    width: 5.7vw;
-    margin-right: auto
+    width: 70%;
+    height: 7vh;
+    left: 0;
 }
 
 /*de flex box layout*/
@@ -347,7 +348,7 @@ div.endcard img{
         height: 30vh;
     }
 }
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 800px) {
     html{
         font-size: 75%;
         size: 75%;
