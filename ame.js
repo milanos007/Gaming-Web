@@ -1,10 +1,17 @@
+document.getElementById("win").style.visibility='hidden';
+var pirate = document.getElementById("pirate");
+var bruh = document.getElementById("bruh");
+var nice = document.getElementById("nice");
+
 function iShoot(enemy) {
     enemy.classList.add("dead");
     updateHealthPoints(healthPoints + 3);
 
     if(!livingEnemies().length) {
-        alert("Victory").window.location.reload();
-        window.location.reload();
+        document.getElementById("win").style.visibility='visible';
+        alert("YOUR SO GOOD! Victory!").window.location.reload();
+        pirate.pause();
+        nice.play();
     }
 }
 
@@ -28,8 +35,9 @@ function updateHealthPoints(points) {
     healthBar.style.width = points + "%";
 
     if(healthPoints < 1) {
-        alert("YOUR SUCKS! reload the page for some reason it does weird things");
-        window.location.reload();
+        pirate.pause();
+        bruh.play();
+        alert("YOUR SUCKS! reload the page (can't be automatic)");
     }
 }
 
@@ -63,7 +71,9 @@ function randomEnemyAttacks() {
 }
 
 function newGame() {
+    pirate.play();
     randomEnemyAttacks();
-
     document.querySelector("button").style.display = "none";
 }
+
+
