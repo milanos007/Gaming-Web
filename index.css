@@ -89,7 +89,7 @@ div.balk{
     display: flex;
     height: 300vh;
     width: 12.5vw;
-    background: rgba(100, 50, 300, 0.96);
+    background: rgba(4,2,1, 0.5);
 }
 section{
     height: 300vh;
