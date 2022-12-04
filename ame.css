@@ -102,9 +102,9 @@ img{
     color: white;
     position: absolute;
     font-size: 400%;
-    margin-top: 60%;
+    margin-top: 20%;
     display: flex;
-    text-align: center;
+    align-items: center;
     flex-direction: column;
 }
 #win p{
