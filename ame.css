@@ -166,3 +166,31 @@ div.balk{
     height: 200vh;
     background-color: rgb(0, 0, 50);
 }
+
+@media screen and (max-width: 1000px) {
+    .img img{
+        height: 30%;
+    }
+    .txt{
+        font-size: 250%;
+    }
+    button{
+        height: 10%;
+        font-size: 200%;
+    }
+    nav li{
+        font-size: 90%;
+    }
+    .enemy{
+        height: 5%;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .img img{
+        height: 30%;
+    }
+    .txt{
+        font-size: 200%;
+    }
+}

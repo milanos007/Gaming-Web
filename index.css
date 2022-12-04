@@ -356,4 +356,7 @@ div.endcard img{
         height: 25%;
         font-size: 90%;
     }
+    nav li{
+        font-size: 90%;
+    }
 }
