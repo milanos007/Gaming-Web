@@ -1,36 +1,40 @@
 document.getElementById("win").style.visibility='hidden';
-var pirate = document.getElementById("pirate");
-var bruh = document.getElementById("bruh");
-var nice = document.getElementById("nice");
+let pirate = document.getElementById("pirate");
+let bruh = document.getElementById("bruh");
+let nice = document.getElementById("nice");
+let winning = document.getElementById("winning");
+let GunShot = document.getElementById("shoot")
+
 
 function iShoot(enemy) {
+    GunShot.play();
     enemy.classList.add("dead");
     updateHealthPoints(healthPoints + 3);
 
     if(!livingEnemies().length) {
         document.getElementById("win").style.visibility='visible';
         pirate.pause();
-        nice.play();
+        winning.play();
         alert("YOUR SO GOOD! Victory!").window.location.reload();
     }
 }
 
 function enemyAttacksMe(enemy) {
     enemy.classList.add("showing");
-    setTimeout(()=> {
+    setTimeout(()=> { 
         enemyShootsMe(enemy);
-    }, 500);
+    }, 600);
 
     setTimeout( ()=> {
         enemy.classList.remove("showing");
-    }, 1000);
+    }, 1200);
 }
 
-var healthPoints = 100;
+let healthPoints = 100;
 
 function updateHealthPoints(points) {
     healthPoints = points;
-    var healthBar = document.querySelector("#healthBar");
+    let healthBar = document.querySelector("#healthBar");
 
     healthBar.style.width = points + "%";
 
@@ -58,11 +62,11 @@ function livingEnemies() {
     return document.querySelectorAll(".enemy:not(.dead)");
 }
 function randomEnemyAttacks() {
-    var randomEnemyNo = Math.random() * livingEnemies().length;
+    let randomEnemyNo = Math.random() * livingEnemies().length;
     randomEnemyNo = Math.floor(randomEnemyNo);
-    var enemy = livingEnemies() [randomEnemyNo];
+    let enemy = livingEnemies() [randomEnemyNo];
 
-    var randomDelay = Math.random() * 200 + 100;
+    let randomDelay = Math.random() * 200 + 100;
 
     setTimeout( ()=> {
         enemyAttacksMe(enemy);
@@ -72,6 +76,7 @@ function randomEnemyAttacks() {
 
 function newGame() {
     pirate.play();
+    pirate.volume = 0.5
     randomEnemyAttacks();
     document.querySelector("button").style.display = "none";
 }

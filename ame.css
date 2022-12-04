@@ -23,8 +23,8 @@ div#gameFrame{
     height: 10%;
     position: relative;
     background: none;
-    bottom: -120%;
-    transition: all 600ms;
+    bottom: -110%;
+    transition: all 300ms;
     background: none;
     display: flex;
     align-items: center;
