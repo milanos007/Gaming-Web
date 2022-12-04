@@ -5,13 +5,13 @@ var nice = document.getElementById("nice");
 
 function iShoot(enemy) {
     enemy.classList.add("dead");
-    updateHealthPoints(healthPoints + 5);
+    updateHealthPoints(healthPoints + 3);
 
     if(!livingEnemies().length) {
         document.getElementById("win").style.visibility='visible';
-        alert("YOUR SO GOOD! Victory!").window.location.reload();
         pirate.pause();
         nice.play();
+        alert("YOUR SO GOOD! Victory!").window.location.reload();
     }
 }
 
