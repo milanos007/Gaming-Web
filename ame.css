@@ -148,8 +148,10 @@ img{
     background: none;
 }
 .img img{
-    margin-top: 5%;
-    height: 90%;
+    margin-left: 10%;
+    margin-top: 15%;
+    height: 70%;
+    width: 90%;
     border-radius: 20px
 }
 
