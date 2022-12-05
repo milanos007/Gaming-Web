@@ -3,23 +3,23 @@ let pirate = document.getElementById("pirate");
 let bruh = document.getElementById("bruh");
 let nice = document.getElementById("nice");
 let winning = document.getElementById("winning");
-let GunShot = document.getElementById("shoot")
+let GunShot = document.getElementById("shoot");
+let counter = 20;
 
-function counter(counts) {
-    let counter = document.getElementById("count");
-    counts = 20;
-
-    counter.innerHTML = counts;
-    counter.style.color = "white";
+function count() {
+    counter -= 1;
+    document.getElementById("count").innerHTML = counter;
 }
-
-counter();
 
 function iShoot(enemy) {
     GunShot.play();
     enemy.classList.add("dead");
     updateHealthPoints(healthPoints + 3);
+    count();
 
+    setTimeout( ()=> {
+        enemy.classList.remove("showing");
+    }, 150);
 
     if(!livingEnemies().length) {
         document.getElementById("win").style.visibility='visible';
@@ -33,11 +33,11 @@ function enemyAttacksMe(enemy) {
     enemy.classList.add("showing");
     setTimeout(()=> { 
         enemyShootsMe(enemy);
-    }, 600);
+    }, 500);
 
     setTimeout( ()=> {
         enemy.classList.remove("showing");
-    }, 1200);
+    }, 1000);
 }
 
 let healthPoints = 100;
@@ -51,19 +51,22 @@ function updateHealthPoints(points) {
     if(healthPoints < 1) {
         pirate.pause();
         bruh.play();
-        alert("YOUR SUCKS! (re-open) the page re-load is not gonna help");
+        alert("YOUR SUCKS! bc your bad asf your website is tripping");
     }
 }
 
 function enemyShootsMe(enemy) {
     enemy.classList.add("shooting");
-    updateHealthPoints(healthPoints - 1);
+    enemy.classList.add("gun");
+    updateHealthPoints(healthPoints - 0.5);
 
     if(!enemy.classList.contains("dead")) {
         enemy.classList.add("shooting");
+        enemy.classList.add("gun");
     
     setTimeout(()=> {
         enemy.classList. remove("shooting");
+        enemy.classList. remove("gun");
     }, 200);
     }
 }
