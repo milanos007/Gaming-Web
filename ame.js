@@ -5,11 +5,21 @@ let nice = document.getElementById("nice");
 let winning = document.getElementById("winning");
 let GunShot = document.getElementById("shoot")
 
+function counter(counts) {
+    let counter = document.getElementById("count");
+    counts = 20;
+
+    counter.innerHTML = counts;
+    counter.style.color = "white";
+}
+
+counter();
 
 function iShoot(enemy) {
     GunShot.play();
     enemy.classList.add("dead");
     updateHealthPoints(healthPoints + 3);
+
 
     if(!livingEnemies().length) {
         document.getElementById("win").style.visibility='visible';
@@ -41,7 +51,7 @@ function updateHealthPoints(points) {
     if(healthPoints < 1) {
         pirate.pause();
         bruh.play();
-        alert("YOUR SUCKS! reload the page (can't be automatic)");
+        alert("YOUR SUCKS! (re-open) the page re-load is not gonna help");
     }
 }
 
