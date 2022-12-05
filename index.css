@@ -311,13 +311,8 @@ div.endcard{
     position: relative;
     height: 80%;
     width: 40%;
+    border-radius: 20px;
     background: rgba(4,2,1, 0.0);
-    display: flex;
-}
-div.endcard{
-    height: 90%;
-    width: 48%;
-    border-radius: 10%;
     display: flex;
 }
 div.endcard:hover{
