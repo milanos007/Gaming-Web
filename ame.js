@@ -14,7 +14,7 @@ function count() {
 function iShoot(enemy) {
     GunShot.play();
     enemy.classList.add("dead");
-    updateHealthPoints(healthPoints + 3);
+    updateHealthPoints(healthPoints + 2);
     count();
 
     setTimeout( ()=> {
@@ -51,7 +51,10 @@ function updateHealthPoints(points) {
     if(healthPoints < 1) {
         pirate.pause();
         bruh.play();
-        alert("YOUR SUCKS! bc your bad asf your website is tripping");
+        window.location.reload();
+        alert("Your Sucks and bad asf so try again! (click on ok)");
+        alert = function(){};
+        alert("test");
     }
 }
 
