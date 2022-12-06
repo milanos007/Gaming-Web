@@ -1,0 +1,133 @@
+section{
+    display: flex;
+    flex-direction: column;
+}
+.s{
+    height: 25%;
+    width: 100%;
+    overflow: hidden;
+}
+.s1{
+    background-color: red;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.img{
+    position: relative;
+    background-color: white;
+    height: 70%;
+    width: 25%;
+    border-radius: 20px;
+    margin-left: 10%;
+}
+.txt{
+    position: relative;
+    height: 80%;
+    width: 40%;
+    color: white;
+    font-size: 200%
+}
+.txt p{
+    font-size: 60%;
+}
+
+
+
+.s2{
+    background-color: blue;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    overflow: hidden;
+}
+.s2 h1{
+    margin-left: 25%;
+}
+.s2 p{
+    margin-left: 25%;
+}
+.menu{
+    width: 50%;
+    height: 100%;
+    background-color: yellow;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.card{
+    width: 60%;
+    height: 20%;
+    background-color: white;
+    display: flex;
+    justify-content: space-around;
+}
+.card img{
+    width: 80%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+
+.s3{
+    background-color: green;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+.tekst{
+    position: relative;
+    background-color: white;
+    width: 80%;
+    height: 30%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    font-size: 400%;
+    overflow: hidden;
+}
+.tekst2{
+    position: relative;
+    background-color: blueviolet;
+    width: 80%;
+    height: 60%;
+}
+.tekst2 img{
+    width: 80%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+
+.s4{
+    background-color: rgb(206, 220, 10);
+    display: flex;
+    justify-content: space-evenly;
+}
+.txtt{
+    position: relative;
+    text-align: center;
+    height: 80%;
+    width: 40%;
+    margin-top: 5%;
+    color: white;
+    font-size: 200%
+}
+.txtt p{
+    font-size: 90%;
+}
+
+@media screen and (max-width: 900px) {
+    .img{
+        width: 50%;
+        margin: 0%;
+    }
+    .card{
+        width: 80%;
+    }
+    .image{
+        height: 45%;
+    }
+}
