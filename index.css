@@ -152,7 +152,7 @@ div.img{
     position: relative;
     height: 100%;
     width: 75%;
-    border-radius: 50px;
+    border-radius: 20px;
     background-image: url(docs/ameTumbnail2.png);
     background-position: center;
     background-repeat: no-repeat;
@@ -265,7 +265,7 @@ div.kaart{
     position: relative;
     height: 60%;
     width: 22%;
-    border-radius: 10%;
+    border-radius: 10px;
     background: rgba(4,2,1, 0.0);
     display: flex;
     align-items: center;
@@ -311,7 +311,7 @@ div.endcard{
     position: relative;
     height: 80%;
     width: 40%;
-    border-radius: 20px;
+    border-radius: 15px;
     background: rgba(4,2,1, 0.0);
     display: flex;
 }
@@ -367,5 +367,10 @@ div.endcard img{
     }
     nav li{
         font-size: 90%;
+    }
+}
+@media screen and (max-width: 400px) {
+    html{
+        font-size: 50%;
     }
 }
