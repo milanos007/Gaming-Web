@@ -2,16 +2,25 @@ section{
     display: flex;
     flex-direction: column;
 }
+.balk{
+    background-color: #000000;
+}
 .s{
     height: 25%;
     width: 100%;
     overflow: hidden;
 }
 .s1{
-    background-color: red;
+    background-color: #7B68EE;
     display: flex;
     align-items: center;
     justify-content: space-between;
+}
+.txt h1{
+    text-shadow: #FF69B4 1px 0 10px;
+}
+.txt p{
+    text-shadow: #FF69B4 1px 0 10px;
 }
 .img{
     position: relative;
@@ -20,6 +29,11 @@ section{
     width: 25%;
     border-radius: 20px;
     margin-left: 10%;
+    overflow: hidden;
+}
+.s1 img{
+    width: 100%;
+    height: 100%;
 }
 .txt{
     position: relative;
@@ -35,7 +49,7 @@ section{
 
 
 .s2{
-    background-color: blue;
+    background-color: #7B68EE;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -50,18 +64,18 @@ section{
 .menu{
     width: 50%;
     height: 100%;
-    background-color: yellow;
+    background: none;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: center;
 }
 .card{
     width: 60%;
     height: 20%;
-    background-color: white;
+    background: none;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
 }
 .card img{
     width: 80%;
@@ -71,7 +85,7 @@ section{
 
 
 .s3{
-    background-color: green;
+    background-color: #7B68EE;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -79,7 +93,7 @@ section{
 }
 .tekst{
     position: relative;
-    background-color: white;
+    background: none;
     width: 80%;
     height: 30%;
     display: flex;
@@ -87,22 +101,30 @@ section{
     align-items: center;
     font-size: 400%;
     overflow: hidden;
+    color: white;
 }
 .tekst2{
     position: relative;
-    background-color: blueviolet;
+    background: none;
     width: 80%;
     height: 60%;
+    display: flex;
+    justify-content: space-around;
 }
 .tekst2 img{
-    width: 80%;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+.tekst2 a{
+    width: 100%;
     height: 100%;
     border-radius: 10px;
 }
 
 
 .s4{
-    background-color: rgb(206, 220, 10);
+    background-color: #7B68EE;
     display: flex;
     justify-content: space-evenly;
 }
@@ -116,7 +138,7 @@ section{
     font-size: 200%
 }
 .txtt p{
-    font-size: 90%;
+    font-size: 80%;
 }
 
 @media screen and (max-width: 900px) {
