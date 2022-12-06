@@ -152,7 +152,7 @@ div.img{
     position: relative;
     height: 100%;
     width: 75%;
-    border-radius: 50px;
+    border-radius: 20px;
     background-image: url(docs/ameTumbnail2.png);
     background-position: center;
     background-repeat: no-repeat;
@@ -265,7 +265,7 @@ div.kaart{
     position: relative;
     height: 60%;
     width: 22%;
-    border-radius: 10%;
+    border-radius: 20px;
     background: rgba(4,2,1, 0.0);
     display: flex;
     align-items: center;
@@ -279,7 +279,7 @@ div.kaart a{
 div.kaart img{
     height: 100%;
     width: 100%;
-    border-radius: 10%;
+    border-radius: 20px;
 }
 div.kaart:hover{
     transform: translateY(-10px);
