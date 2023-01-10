@@ -11,16 +11,16 @@ section{
     overflow: hidden;
 }
 .s1{
-    background-color: #7B68EE;
+    background-color: burlywood;
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 .txt h1{
-    text-shadow: #FF69B4 1px 0 10px;
+    text-shadow: peru 1px 0 10px;
 }
 .txt p{
-    text-shadow: #FF69B4 1px 0 10px;
+    text-shadow: peru 1px 0 10px;
 }
 .img{
     position: relative;
@@ -49,7 +49,7 @@ section{
 
 
 .s2{
-    background-color: #7B68EE;
+    background-color: burlywood;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -89,7 +89,7 @@ section{
 
 
 .s3{
-    background-color: #7B68EE;
+    background-color: burlywood;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -128,7 +128,7 @@ section{
 
 
 .s4{
-    background-color: #7B68EE;
+    background-color: burlywood;
     display: flex;
     justify-content: space-evenly;
 }
